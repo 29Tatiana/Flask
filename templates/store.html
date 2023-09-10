@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Домой</a>
+        <a href="{{ url_for('info') }}">О нас</a>
+        <a href="{{ url_for('contacts') }}">Контакты</a>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+
+    <footer>
+        <div>
+            <p>Какая-то информация об авторском праве</p>
+        </div>
+    </footer>
+</body>
+</html>
